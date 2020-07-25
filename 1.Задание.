@@ -17,6 +17,13 @@ minutes = (time - hours * 3600) // 60
 seconds = time - (hours * 3600 + minutes * 60)
 print(f"Время в формате чч:мм:сс   {hours} : {minutes} : {seconds}"
 
+# 2.1
+
+import datetime
+time=int(input('Добрый день введите время в секундах: '))
+time_finish=str(datetime.timedelta(seconds=time))
+print(time_finish)
+
 #3.Узнайте у пользователя число n. Найдите сумму чисел n + nn + nnn. Например, пользователь ввёл число 3. Считаем 3 + 33 + 333 = 369.
 
 n = int(input("Введите число - "))
@@ -36,6 +43,16 @@ while a >= 1:
     else:
         print("Максимальное цифра в числе ", max)
         break
+#4.1
+
+number = input('Введите любое число: ')
+numb = list (number)
+numb.sort()
+print(numb.pop()
+
+#4.2
+
+print(sorted(list(input('Введите любое число: '))).pop())
 
 #5.Запросите у пользователя значения выручки и издержек фирмы. Определите, с каким финансовым результатом работает фирма 
    (прибыль — выручка больше издержек, или убыток — издержки больше выручки). Выведите соответствующее сообщение. 
@@ -62,9 +79,10 @@ a = int(input("Введите результаты пробежки первог
 b = int(input("Введите общий желаемый результат в км "))
 result_days = 1
 result_km = a
+print(result_km, result_days)
 while result_km < b:
-        a = a + 0.1 * a
-        result_days += 1
-        result_km = result_km + a
+# a = 0.1 * a
+result_days += 1
+result_km = result_km + result_km * 0.1
+print(result_km)
 print(f"Вы достигнете требуемых показателей на %.d день" % result_days)
-
