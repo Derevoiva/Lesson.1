@@ -81,8 +81,8 @@ result_days = 1
 result_km = a
 print(result_km, result_days)
 while result_km < b:
-# a = 0.1 * a
-result_days += 1
-result_km = result_km + result_km * 0.1
+     # a = 0.1 * a
+     result_days += 1
+     result_km = result_km + result_km * 0.1
 print(result_km)
 print(f"Вы достигнете требуемых показателей на %.d день" % result_days)
